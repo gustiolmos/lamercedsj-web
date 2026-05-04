@@ -896,6 +896,12 @@ p { margin: 0 0 1em; }
 }
 
 /* ---------- Botón flotante de WhatsApp ---------- */
+/* Botón oculto porque el teléfono parroquial es fijo (no tiene WhatsApp).
+   Para reactivarlo cuando haya un número real:
+   1) Borrar esta regla `.wa-float { display: none; }`
+   2) Actualizar el número en las 5 páginas (buscar 5493498427515) */
+.wa-float { display: none !important; }
+
 .wa-float {
   position: fixed;
   bottom: 22px;
