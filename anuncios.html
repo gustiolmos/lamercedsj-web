@@ -169,7 +169,30 @@
     </a>
   </nav>
 
+  <button class="chat-toggle" type="button" aria-label="Abrir asistente" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+  </button>
+  <aside class="chat-panel" role="dialog" aria-label="Asistente parroquial" aria-hidden="true">
+    <header class="chat-head">
+      <div class="chat-head-info">
+        <span class="chat-avatar" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M11 7h2v4h4v2h-4v8h-2v-8H7v-2h4z"/></svg></span>
+        <div>
+          <p class="chat-title">Asistente parroquial</p>
+          <p class="chat-status">Te ayudo con consultas frecuentes</p>
+        </div>
+      </div>
+      <button type="button" class="chat-close" aria-label="Cerrar chat">&times;</button>
+    </header>
+    <div class="chat-body" role="log" aria-live="polite"></div>
+    <div class="chat-quick"></div>
+    <form class="chat-input" autocomplete="off">
+      <input type="text" placeholder="Escribí tu consulta…" aria-label="Mensaje">
+      <button type="submit" aria-label="Enviar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>
+    </form>
+  </aside>
+
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
