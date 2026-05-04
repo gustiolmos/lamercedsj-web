@@ -1,0 +1,51 @@
+{
+  "name": "Parroquia Nuestra Señora de la Merced",
+  "short_name": "La Merced",
+  "description": "Comunidad parroquial Nuestra Señora de la Merced en San Justo, provincia de Santa Fe. Horarios de misa, anuncios y vida parroquial.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "es-AR",
+  "dir": "ltr",
+  "theme_color": "#1e3a5f",
+  "background_color": "#faf6ee",
+  "categories": ["lifestyle", "education"],
+  "icons": [
+    {
+      "src": "img/escudo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/escudo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/escudo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Anuncios",
+      "url": "./anuncios.html",
+      "description": "Últimos anuncios de la parroquia"
+    },
+    {
+      "name": "Horarios",
+      "url": "./horarios.html",
+      "description": "Horarios de misa y sacramentos"
+    },
+    {
+      "name": "Contacto",
+      "url": "./contacto.html",
+      "description": "Cómo contactar y llegar"
+    }
+  ]
+}
