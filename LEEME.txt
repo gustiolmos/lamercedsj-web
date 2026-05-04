@@ -1,0 +1,47 @@
+Sitio web — Parroquia Nuestra Señora de la Merced (San Justo, Santa Fe)
+========================================================================
+
+ESTRUCTURA DE ARCHIVOS
+----------------------
+  index.html       Página de inicio
+  anuncios.html    Anuncios y novedades
+  horarios.html    Horarios de misa, confesiones, sacramentos
+  nosotros.html    Historia y comunidad
+  contacto.html    Contacto y mapa
+  css/styles.css   Hoja de estilos (toda la apariencia)
+  js/main.js       JavaScript mínimo (menú móvil + año footer)
+
+VER EL SITIO LOCALMENTE
+-----------------------
+  Hacé doble clic en index.html — abre directamente en el navegador.
+
+CÓMO AGREGAR UN ANUNCIO
+-----------------------
+1. Abrí "anuncios.html" con un editor de texto (Notepad, VS Code, etc.).
+2. Buscá el primer bloque <article class="announcement">...</article>.
+3. Copialo entero y pegalo INMEDIATAMENTE ARRIBA del primer anuncio actual,
+   para que el más nuevo aparezca primero.
+4. Editá:
+     - La fecha (datetime="YYYY-MM-DD" + el texto visible).
+     - La etiqueta (Fiesta Patronal, Inscripciones, Cáritas, Sacramentos, etc.).
+     - El título <h2>.
+     - Los párrafos <p>.
+5. Guardá el archivo.
+
+(Opcional) Para que el anuncio nuevo también aparezca destacado en la página
+de inicio, editá "index.html" y reemplazá una de las 3 tarjetas dentro
+de <div class="cards-grid">.
+
+DEPLOY GRATUITO (cuando estés listo)
+------------------------------------
+Opción recomendada: Cloudflare Pages
+  1. Subí esta carpeta a un repo de GitHub (público o privado).
+  2. Entrá a https://pages.cloudflare.com y conectá el repo.
+  3. Build command: (vacío)   Output dir: /
+  4. Cloudflare te da una URL gratuita .pages.dev
+  5. Cuando compres el dominio (Cloudflare Registrar ~10-15 USD/año),
+     lo apuntás desde el panel y listo.
+
+SOPORTE
+-------
+Cualquier ajuste de colores, secciones o nuevas páginas, pedímelo y lo hacemos.
