@@ -2,7 +2,7 @@
 // Estrategia: cache-first para assets estáticos, network con fallback al cache.
 // Bumpear CACHE_NAME cuando se cambien los assets para forzar reinstalación.
 
-const CACHE_NAME = 'lamerced-v4';
+const CACHE_NAME = 'lamerced-v5';
 const ASSETS = [
   './',
   './index.html',
