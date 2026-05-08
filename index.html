@@ -21,6 +21,43 @@
   <meta property="og:url" content="https://gustiolmos.github.io/lamercedsj-web/">
   <meta property="og:image" content="https://gustiolmos.github.io/lamercedsj-web/img/fachada.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://gustiolmos.github.io/lamercedsj-web/">
+
+  <!-- Datos estructurados (Schema.org) — ayudan a Google a mostrar info enriquecida -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CatholicChurch",
+    "name": "Parroquia Nuestra Señora de la Merced",
+    "alternateName": "La Merced San Justo",
+    "url": "https://gustiolmos.github.io/lamercedsj-web/",
+    "image": "https://gustiolmos.github.io/lamercedsj-web/img/fachada.jpg",
+    "logo": "https://gustiolmos.github.io/lamercedsj-web/img/escudo.png",
+    "telephone": "+54-3498-42-7515",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Independencia 2565",
+      "addressLocality": "San Justo",
+      "addressRegion": "Santa Fe",
+      "postalCode": "S3040",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -30.789938,
+      "longitude": -60.593754
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "11:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "20:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "20:00", "closes": "21:00" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/lamercedsj/",
+      "https://www.instagram.com/lamercedsj/"
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,6 +125,17 @@
     </section>
 
     <section class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="ornament-mini" aria-hidden="true">✦</span>
+          <h2>Próximas celebraciones</h2>
+          <p class="section-sub">Fiestas litúrgicas y eventos parroquiales</p>
+        </header>
+        <div class="cards-grid" id="events-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
       <div class="container">
         <header class="section-header">
           <span class="ornament-mini" aria-hidden="true">✦</span>
@@ -180,6 +228,8 @@
           <li><a href="anuncios.html">Anuncios</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="oracion.html">Pedido de oración</a></li>
+          <li><a href="colaborar.html">Colaborar</a></li>
         </ul>
       </div>
     </div>
@@ -244,7 +294,9 @@
   </aside>
 
   <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
   <script src="js/chatbot.js"></script>
+  <script src="js/analytics.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {

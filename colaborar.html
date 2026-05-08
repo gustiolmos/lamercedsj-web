@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nosotros — Parroquia Nuestra Señora de la Merced</title>
-  <meta name="description" content="Historia, comunidad y patrona de la Parroquia Nuestra Señora de la Merced de San Justo, Santa Fe.">
+  <title>Colaborar — Parroquia Nuestra Señora de la Merced</title>
+  <meta name="description" content="Colaborá con la Parroquia Nuestra Señora de la Merced de San Justo, Santa Fe. Sostén de Cáritas parroquial, mantenimiento del templo y misión pastoral.">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
   <!-- PWA -->
@@ -16,12 +16,12 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Parroquia Nuestra Señora de la Merced">
   <meta property="og:locale" content="es_AR">
-  <meta property="og:title" content="Nosotros — Parroquia Nuestra Señora de la Merced">
-  <meta property="og:description" content="Historia, comunidad y patrona de nuestra parroquia. Templo inaugurado en 1957 en San Justo, Santa Fe.">
-  <meta property="og:url" content="https://gustiolmos.github.io/lamercedsj-web/nosotros.html">
+  <meta property="og:title" content="Colaborar — Parroquia Nuestra Señora de la Merced">
+  <meta property="og:description" content="Sostené la vida y misión parroquial: Cáritas, sacramentos, mantenimiento del templo.">
+  <meta property="og:url" content="https://gustiolmos.github.io/lamercedsj-web/colaborar.html">
   <meta property="og:image" content="https://gustiolmos.github.io/lamercedsj-web/img/fachada.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://gustiolmos.github.io/lamercedsj-web/nosotros.html">
+  <link rel="canonical" href="https://gustiolmos.github.io/lamercedsj-web/colaborar.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,81 +45,70 @@
         <a href="index.html">Inicio</a>
         <a href="anuncios.html">Anuncios</a>
         <a href="horarios.html">Horarios</a>
-        <a href="nosotros.html" class="active">Nosotros</a>
+        <a href="nosotros.html">Nosotros</a>
         <a href="contacto.html">Contacto</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero with-image">
       <div class="container">
-        <p class="eyebrow">Nuestra historia, nuestra fe</p>
-        <h1>Nosotros</h1>
-        <p class="page-sub">Una comunidad que camina junta al amparo de María.</p>
+        <p class="eyebrow">Sostén de la vida parroquial</p>
+        <h1>Colaborar</h1>
+        <p class="page-sub">«Cada uno dé como propuso en su corazón, no con tristeza ni por obligación, porque Dios ama al que da con alegría.» <span class="cite">2 Cor 9, 7</span></p>
       </div>
     </section>
 
     <section class="section">
       <div class="container narrow">
-        <article class="prose">
-          <div class="ornament-mini centered" aria-hidden="true">✦</div>
-          <h2>Nuestra Patrona: María de la Merced</h2>
-          <div class="patrona-block">
-            <figure class="patrona-image">
-              <img src="img/virgen.jpg" alt="Imagen venerada de Nuestra Señora de la Merced en la parroquia de San Justo">
-              <figcaption class="patrona-caption">Nuestra Señora de la Merced<br>Imagen venerada en la parroquia</figcaption>
-            </figure>
-            <div>
-              <p>Nuestra Señora de la Merced —también llamada <em>Virgen de la Misericordia</em>— es venerada como redentora de los cautivos y protectora de quienes sufren. Su devoción nació en el siglo XIII, cuando se apareció a San Pedro Nolasco, San Raimundo de Peñafort y al rey Jaime I de Aragón, inspirando la fundación de la Orden de la Merced para liberar cristianos prisioneros.</p>
-              <p>En cada estampa, María se muestra con manto blanco y escapulario, llevando sobre el pecho el escudo mercedario, signo del amor liberador de Cristo. Su <strong>fiesta litúrgica se celebra el 24 de septiembre</strong>, día en que nuestra parroquia se viste de gala para honrarla.</p>
+        <div class="donate-block">
+          <p>Tu colaboración —chica o grande— sostiene la misión pastoral de nuestra comunidad. Cada aporte se destina a:</p>
+
+          <div class="donate-uses">
+            <div class="donate-use">
+              <h4>Cáritas parroquial</h4>
+              <p>Acompañamiento a las familias del barrio en situación de necesidad.</p>
+            </div>
+            <div class="donate-use">
+              <h4>Mantenimiento del templo</h4>
+              <p>Cuidado del edificio, servicios y los espacios donde nos reunimos.</p>
+            </div>
+            <div class="donate-use">
+              <h4>Catequesis y pastoral</h4>
+              <p>Materiales, encuentros y formación para niños, jóvenes y adultos.</p>
             </div>
           </div>
-        </article>
 
-        <div class="divider" aria-hidden="true"><span>✶</span></div>
+          <!--
+            Botón de colaboración con Mercado Pago.
+            IMPORTANTE: requiere que la parroquia tenga cuenta de Mercado Pago activa.
+            Pasos para activarlo:
+              1) Crear cuenta MP a nombre de la parroquia (o usar una autorizada).
+              2) En "Cobrar" → "Link de pago", generar un link reutilizable.
+              3) Reemplazar https://mpago.la/TU_LINK abajo por el link generado.
+              4) Eliminar el bloque .donate-disabled de más abajo.
+          -->
+          <a href="https://mpago.la/TU_LINK" class="btn btn-mp" target="_blank" rel="noopener" aria-label="Colaborar por Mercado Pago">
+            Colaborar por Mercado Pago
+          </a>
 
-        <article class="prose">
-          <h2>Nuestra parroquia</h2>
-          <p>La Parroquia Nuestra Señora de la Merced sirve a la comunidad católica de <strong>San Justo</strong>, cabecera del departamento homónimo de la provincia de Santa Fe. Desde su templo en calle Independencia 2565, acompaña a generaciones de familias en su camino de fe: bautismos, primeras comuniones, confirmaciones, matrimonios y la oración cotidiana de un pueblo creyente.</p>
-          <p>Pertenecemos a la <strong>Arquidiócesis de Santa Fe</strong> y caminamos en comunión con la Iglesia universal y con el Santo Padre.</p>
-        </article>
+          <div class="donate-disabled">
+            <strong>En proceso:</strong> estamos coordinando la activación del link de cobro institucional. Mientras tanto, podés colaborar acercándote a la secretaría parroquial o llamando al <a href="tel:+543498427515">+54 3498 42-7515</a>.
+          </div>
+        </div>
 
-        <div class="divider" aria-hidden="true"><span>✶</span></div>
-
-        <article class="prose">
-          <h2>El templo</h2>
-          <p>Nuestro templo fue inaugurado en <strong>1957</strong>, según el diseño del arquitecto <strong>Carlos Duarte</strong>. A diferencia de muchas iglesias centenarias de la región, se erige como un referente de la arquitectura religiosa moderna de mediados del siglo XX: líneas funcionales, geometrías claras y una solemnidad sobria que le confiere identidad propia.</p>
-          <p>Su interior se organiza en una <strong>amplia nave central</strong> flanqueada por dos naves laterales, disposición que favorece la congregación de los fieles y la visibilidad hacia el altar mayor. El cuidado del edificio refleja el compromiso sostenido de la comunidad parroquial.</p>
-          <p>El templo cuenta con <strong>entrada accesible para sillas de ruedas</strong>, garantizando la inclusión de todas las personas que se acercan a la casa del Padre.</p>
-        </article>
-
-        <div class="divider" aria-hidden="true"><span>✶</span></div>
-
-        <article class="prose">
-          <h2>Vida comunitaria</h2>
-          <p>La parroquia es mucho más que un edificio: es la familia de los hijos de Dios reunida en torno a la Eucaristía. En nuestra comunidad encontrarás:</p>
-          <ul class="bullet-list">
-            <li><strong>Catequesis</strong> de iniciación, primera comunión y confirmación.</li>
-            <li><strong>Cáritas parroquial</strong>, asistiendo a las familias más necesitadas del barrio.</li>
-            <li><strong>Grupo de oración</strong> y rezo del Santo Rosario.</li>
-            <li><strong>Pastoral juvenil</strong>, acompañando a adolescentes y jóvenes.</li>
-            <li><strong>Ministros extraordinarios</strong> de la comunión y servidores del altar.</li>
-          </ul>
-          <p>Si querés sumarte a alguno de los grupos parroquiales, acercate a la oficina o conversalo con el sacerdote después de misa. <em>Hay un lugar para vos.</em></p>
-        </article>
-
-        <div class="end-mark" aria-hidden="true">✶</div>
+        <div class="prose centered-text" style="margin-top:2.5rem;">
+          <p style="color:var(--color-muted);font-size:0.92rem;"><em>La parroquia agradece especialmente a quienes, mes a mes, sostienen la obra pastoral con su aporte regular. Que el Señor recompense vuestra generosidad.</em></p>
+        </div>
       </div>
     </section>
 
-    <section class="section section-dark">
-      <div class="container quote-block">
-        <div class="ornament-large" aria-hidden="true">✶</div>
-        <blockquote>
-          «Acordaos, oh piadosísima Virgen María, que jamás se ha oído decir que ninguno de los que han acudido a vuestra protección, implorando vuestro auxilio y reclamando vuestro socorro, haya sido abandonado.»
-        </blockquote>
-        <p class="quote-author">— San Bernardo de Claraval</p>
+    <section class="section section-alt">
+      <div class="container narrow centered-text">
+        <div class="ornament-mini centered" aria-hidden="true">✦</div>
+        <h2>«Den, y se les dará: una medida buena, apretada, sacudida y rebosante echarán en su regazo.»</h2>
+        <p class="cite">Lc 6, 38</p>
       </div>
     </section>
   </main>
@@ -178,7 +167,7 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
       <span>Horarios</span>
     </a>
-    <a href="nosotros.html" class="bn-item active">
+    <a href="nosotros.html" class="bn-item">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
       <span>Nosotros</span>
     </a>

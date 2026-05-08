@@ -111,14 +111,14 @@
       id: 'caritas',
       title: '❤ Cáritas / colaborar',
       keywords: ['caritas', 'ayuda', 'ayudar', 'donar', 'donacion', 'donaciones', 'alimentos', 'colaborar', 'colaboracion', 'ofrenda', 'aporte'],
-      response: '<p><strong>Cáritas parroquial</strong> recibe donaciones de alimentos no perecederos para asistir a familias del barrio.</p><p>Podés acercar tu aporte a la <strong>sacristía</strong> después de cada misa. Especialmente necesitamos: leche en polvo, fideos, arroz, azúcar, yerba y conservas.</p><p>Para sumarte como voluntario/a, consultá en la secretaría.</p>',
+      response: '<p><strong>Cáritas parroquial</strong> recibe donaciones de alimentos no perecederos para asistir a familias del barrio.</p><p>Podés acercar tu aporte a la <strong>sacristía</strong> después de cada misa. Especialmente necesitamos: leche en polvo, fideos, arroz, azúcar, yerba y conservas.</p><p>También podés sostener la obra parroquial con un aporte: <a href="colaborar.html"><strong>Colaborar →</strong></a></p>',
       related: ['secretaria', 'oracion']
     },
     {
       id: 'oracion',
       title: '🕯 Pedir oración',
       keywords: ['pedir', 'intencion', 'intenciones', 'oracion', 'rezar', 'rezo', 'rogar', 'rogativa', 'misa por', 'difunto'],
-      response: '<p>Si querés <strong>pedir una oración</strong> o que se ofrezca una misa por una intención particular (un enfermo, un difunto, una acción de gracias), acercate a la <strong>secretaría parroquial</strong> o al sacerdote después de misa.</p><p>También podés sumarte al rezo del Santo Rosario y a los grupos de oración de la comunidad.</p>',
+      response: '<p>Si querés <strong>pedir una oración</strong> o que se ofrezca una misa por una intención particular (un enfermo, un difunto, una acción de gracias), podés:</p><ul><li>Dejar tu intención en línea: <a href="oracion.html"><strong>formulario de pedido de oración →</strong></a></li><li>Acercarte a la <strong>secretaría parroquial</strong> o al sacerdote después de misa.</li></ul><p>También podés sumarte al rezo del Santo Rosario y a los grupos de oración de la comunidad.</p>',
       related: ['secretaria', 'uncion', 'exequias']
     },
     {

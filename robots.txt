@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gustiolmos.github.io/lamercedsj-web/sitemap.xml

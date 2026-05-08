@@ -5,66 +5,55 @@ Funcionalidades pendientes, en orden de **valor / esfuerzo**.
 ---
 
 ## 1. SEO básico
-**Esfuerzo:** ~30 min · **Estado:** pendiente
+**Esfuerzo:** ~30 min · **Estado:** ✅ hecho · **Pendiente:** submitear `sitemap.xml` a Google Search Console.
 
-Para que cuando alguien busque "parroquia san justo santa fe" en Google aparezca el sitio.
-
-- Crear `sitemap.xml` con las 5 páginas y submitearlo a Google Search Console.
-- Crear `robots.txt` permitiendo indexar todo.
-- Verificar que cada página tenga `<title>` y `<meta description>` distintos y descriptivos (ya están — repasar nomás).
-- Agregar `<meta name="keywords">` por página (relevancia menor, pero suma).
-- Agregar JSON-LD con schema `Church` o `PlaceOfWorship` en la home (datos estructurados que Google entiende).
+- ✅ `sitemap.xml` con las 7 páginas en la raíz.
+- ✅ `robots.txt` permitiendo indexar todo + apuntando al sitemap.
+- ✅ Canonical en las 7 páginas.
+- ✅ JSON-LD `CatholicChurch` en home con dirección, teléfono, geo, horarios y redes.
+- 🔲 Submitir el sitemap en Google Search Console (manual, una vez).
 
 ---
 
 ## 2. Pedidos de oración
-**Esfuerzo:** 1-2 hs · **Estado:** pendiente
+**Esfuerzo:** 1-2 hs · **Estado:** ✅ hecho · **Pendiente:** crear cuenta Formspree y reemplazar `TU_FORM_ID`.
 
-Formulario donde un fiel deja una intención de oración y le llega por email a la secretaría parroquial.
-
-- Página nueva `oracion.html` o sección dentro de `contacto.html`.
-- Formulario con: nombre (opcional), intención (textarea), email de contacto (opcional).
-- Backend: **Formspree** (free tier 50 envíos/mes, alcanza de sobra). Solo es agregar `action="https://formspree.io/f/XXXXX"` al `<form>`. Sin código de servidor.
-- Mensaje de gracias visual al enviar.
-- Importante: el email destinatario lo configura el dueño del Formspree (vos o la parroquia).
-
-Alternativas a Formspree: Web3Forms, Getform, FabForm — todas tienen free tier similar.
+- ✅ `oracion.html` con formulario (nombre opcional, email opcional, intención requerida).
+- ✅ Honeypot anti-spam (`_gotcha`) y `_subject` configurados.
+- ✅ Linkeado desde `contacto.html` (CTA) y desde el chatbot.
+- 🔲 Crear cuenta en https://formspree.io con email parroquial, generar form ID y reemplazar `TU_FORM_ID` en el `action` del `<form>` (oracion.html).
+- 🔲 Confirmar el email destinatario en el panel de Formspree.
 
 ---
 
 ## 3. Calendario de eventos / próximas celebraciones
-**Esfuerzo:** 2-3 hs · **Estado:** pendiente
+**Esfuerzo:** 2-3 hs · **Estado:** ✅ hecho.
 
-Tarjeta visual en la home con los próximos eventos: Fiesta Patronal (24/sept), Semana Santa, Navidad, etc.
-
-- Componente con cuenta regresiva ("Faltan 142 días para la Patrona").
-- Datos en un JSON simple, ordenados por fecha, filtrando los pasados.
-- Visualmente: lista o cards con fecha grande + título + breve descripción.
-- Opcional avanzado: vista de calendario mensual (más trabajo, menos ROI).
+- ✅ Sección "Próximas celebraciones" en home con cards y cuenta regresiva ("Faltan X días").
+- ✅ Datos en `js/events.js` (array editable). Eventos pasados se filtran solos.
+- ✅ Card destacada para la Fiesta Patronal (estilo `event-featured`).
+- 🔲 (Opcional) Mantener el array de `js/events.js` actualizado año a año.
 
 ---
 
 ## 4. Donaciones / Cáritas online
-**Esfuerzo:** ~30 min (técnico) · **Estado:** pendiente
+**Esfuerzo:** ~30 min (técnico) · **Estado:** ✅ página hecha · **Bloqueante:** falta link de Mercado Pago.
 
-Permite colaborar con un click vía Mercado Pago.
-
-- Página nueva `colaborar.html` (o sección en `nosotros.html`).
-- La parroquia genera un **link de cobro** en Mercado Pago (cuenta institucional o personal autorizada).
-- Embebemos botón "Colaborar" que abre el link.
-- Texto explicativo: a qué se destina lo recaudado (Cáritas, mantenimiento del templo, etc.).
-- **Bloqueante:** requiere que la parroquia tenga cuenta de Mercado Pago activa.
+- ✅ `colaborar.html` con botón Mercado Pago + 3 destinos del aporte (Cáritas, templo, catequesis).
+- ✅ Linkeada desde el chatbot (FAQ Cáritas).
+- 🔲 Parroquia: crear cuenta de Mercado Pago y generar link de cobro reutilizable.
+- 🔲 Reemplazar `https://mpago.la/TU_LINK` en `colaborar.html` por el link real.
+- 🔲 Eliminar el bloque `.donate-disabled` ("En proceso…") cuando el link esté activo.
 
 ---
 
 ## 5. Analytics privado
-**Esfuerzo:** ~15 min · **Estado:** pendiente
+**Esfuerzo:** ~15 min · **Estado:** ✅ scaffolding hecho · **Pendiente:** generar token Cloudflare.
 
-Saber cuánta gente entra, desde dónde, qué páginas leen — sin invadir privacidad.
-
-- **Cloudflare Web Analytics** (gratis, sin cookies, sin tracking de usuarios). Se activa con un script chico.
-- Alternativa: **Plausible** (paid, $9/mes) o **Umami self-hosted** (gratis pero requiere servidor).
-- Útil para decidir qué mejorar después: si nadie entra a "Nosotros" tal vez hay que reorganizar el menú.
+- ✅ `js/analytics.js` con bloque comentado listo, incluido en las 7 páginas.
+- ✅ Modo "Free, host-only": no requiere DNS ni cambiar nameservers.
+- 🔲 Crear cuenta Cloudflare → Web Analytics → Add a site → "Free, host-only".
+- 🔲 Pegar el token en `js/analytics.js` (reemplazar `TU_TOKEN`) y descomentar el bloque.
 
 ---
 
